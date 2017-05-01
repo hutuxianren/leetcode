@@ -1,6 +1,8 @@
-#!/usr/bin/env python
+
 #coding:utf-8
-import urllib, urllib2, cookielib, re
+from urllib.request import urlopen
+from urllib2 import urlopen
+import  cookielib, re
 import ssl 
 import sys
 
@@ -33,7 +35,7 @@ def get_links(opener):
 	links = {}
 	page_num = 60
 	while True:
-		print ("Getting submissions...page %d") % page_num
+		print ("Getting submissions...page %d"%page_num)
 		submissions_url = BASE_URL + 'submissions/%d/' % page_num
 		pattern = 'href="/problems/(.*)/".*\s*</td>\s*<td>\s*.*href="/(submissions/detail/[0-9]*/).*Accepted.*\s*</td>\s*<td>\s*(.*) ms' #获取ac链接，正则表达式
 		submissions = re.findall(pattern, opener.open(submissions_url).read())

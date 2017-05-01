@@ -1,5 +1,5 @@
 # :pencil2: Leetcode Solutions with Python,Golang
-Update time:  2017-05-02 05:08:49
+Update time:  2017-05-02 05:21:38
 Auto created by [leetcode_generate](https://github.com/bonfy/leetcode)
 I have solved **20   /   523** problems
 while there are **96** problems still locked.
